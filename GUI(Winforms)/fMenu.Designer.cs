@@ -52,7 +52,7 @@
             // lbl_Title
             // 
             this.lbl_Title.BackColor = System.Drawing.Color.Black;
-            this.lbl_Title.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_Title.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Title.ForeColor = System.Drawing.Color.White;
             this.lbl_Title.Location = new System.Drawing.Point(188, 0);
             this.lbl_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -76,11 +76,11 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(205, 43);
+            this.lblName.Location = new System.Drawing.Point(205, 54);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(105, 28);
+            this.lblName.Size = new System.Drawing.Size(79, 22);
             this.lblName.TabIndex = 20;
             this.lblName.Text = " Xin chào:";
             // 
@@ -88,11 +88,11 @@
             // 
             this.lblRole.AutoSize = true;
             this.lblRole.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblRole.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRole.ForeColor = System.Drawing.Color.White;
-            this.lblRole.Location = new System.Drawing.Point(229, 75);
+            this.lblRole.Location = new System.Drawing.Point(214, 76);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(90, 28);
+            this.lblRole.Size = new System.Drawing.Size(70, 22);
             this.lblRole.TabIndex = 21;
             this.lblRole.Text = " Quyền :";
             // 
@@ -135,7 +135,7 @@
             // 
             this.btn_DangXuat.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_DangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_DangXuat.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DangXuat.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DangXuat.ForeColor = System.Drawing.Color.White;
             this.btn_DangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btn_DangXuat.Image")));
             this.btn_DangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -151,7 +151,7 @@
             // 
             this.btn_ThietLap.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_ThietLap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_ThietLap.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThietLap.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ThietLap.ForeColor = System.Drawing.Color.White;
             this.btn_ThietLap.Image = ((System.Drawing.Image)(resources.GetObject("btn_ThietLap.Image")));
             this.btn_ThietLap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -167,7 +167,7 @@
             // 
             this.btn_KhachHang.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_KhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_KhachHang.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_KhachHang.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_KhachHang.ForeColor = System.Drawing.Color.White;
             this.btn_KhachHang.Image = ((System.Drawing.Image)(resources.GetObject("btn_KhachHang.Image")));
             this.btn_KhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -183,7 +183,7 @@
             // 
             this.btn_NhanVien.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_NhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_NhanVien.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NhanVien.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NhanVien.ForeColor = System.Drawing.Color.White;
             this.btn_NhanVien.Image = ((System.Drawing.Image)(resources.GetObject("btn_NhanVien.Image")));
             this.btn_NhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -199,7 +199,7 @@
             // 
             this.btn_NhapSP.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_NhapSP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_NhapSP.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NhapSP.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NhapSP.ForeColor = System.Drawing.Color.White;
             this.btn_NhapSP.Image = ((System.Drawing.Image)(resources.GetObject("btn_NhapSP.Image")));
             this.btn_NhapSP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -215,7 +215,7 @@
             // 
             this.btn_SanPham.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_SanPham.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_SanPham.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SanPham.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SanPham.ForeColor = System.Drawing.Color.White;
             this.btn_SanPham.Image = ((System.Drawing.Image)(resources.GetObject("btn_SanPham.Image")));
             this.btn_SanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,7 +231,7 @@
             // 
             this.btn_BanSP.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_BanSP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_BanSP.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_BanSP.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BanSP.ForeColor = System.Drawing.Color.White;
             this.btn_BanSP.Image = ((System.Drawing.Image)(resources.GetObject("btn_BanSP.Image")));
             this.btn_BanSP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -247,7 +247,7 @@
             // 
             this.btn_ThongKe.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_ThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_ThongKe.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThongKe.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ThongKe.ForeColor = System.Drawing.Color.White;
             this.btn_ThongKe.Image = ((System.Drawing.Image)(resources.GetObject("btn_ThongKe.Image")));
             this.btn_ThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;

@@ -87,11 +87,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(33, 268);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 19);
+            this.label4.Size = new System.Drawing.Size(116, 22);
             this.label4.TabIndex = 38;
             this.label4.Text = "Mã Khuyến Mãi:";
             // 
@@ -163,22 +163,22 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(44, 78);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 19);
+            this.label11.Size = new System.Drawing.Size(105, 22);
             this.label11.TabIndex = 6;
             this.label11.Text = "Mã Đơn Nhập:";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(66, 218);
+            this.label14.Location = new System.Drawing.Point(63, 218);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 19);
+            this.label14.Size = new System.Drawing.Size(86, 22);
             this.label14.TabIndex = 17;
             this.label14.Text = "Ngày Nhập:";
             // 
@@ -193,22 +193,22 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(41, 120);
+            this.label8.Location = new System.Drawing.Point(44, 120);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 19);
+            this.label8.Size = new System.Drawing.Size(105, 22);
             this.label8.TabIndex = 9;
             this.label8.Text = "Mã Nhân Viên:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(72, 167);
+            this.label9.Location = new System.Drawing.Point(80, 167);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 19);
+            this.label9.Size = new System.Drawing.Size(69, 22);
             this.label9.TabIndex = 8;
             this.label9.Text = "Mã NCC:";
             // 

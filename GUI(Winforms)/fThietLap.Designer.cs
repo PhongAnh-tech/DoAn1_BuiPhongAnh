@@ -95,18 +95,18 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(12, 287);
+            this.label7.Location = new System.Drawing.Point(19, 287);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 19);
+            this.label7.Size = new System.Drawing.Size(114, 22);
             this.label7.TabIndex = 29;
             this.label7.Text = "Nhập mật khẩu:";
             // 
             // txt_Password
             // 
             this.txt_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Password.Location = new System.Drawing.Point(145, 287);
+            this.txt_Password.Location = new System.Drawing.Point(166, 287);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.Size = new System.Drawing.Size(305, 22);
             this.txt_Password.TabIndex = 28;
@@ -114,11 +114,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(66, 230);
+            this.label6.Location = new System.Drawing.Point(76, 230);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 19);
+            this.label6.Size = new System.Drawing.Size(57, 22);
             this.label6.TabIndex = 27;
             this.label6.Text = "Quyền:";
             // 
@@ -145,18 +145,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(21, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 19);
+            this.label2.Size = new System.Drawing.Size(112, 22);
             this.label2.TabIndex = 6;
             this.label2.Text = "Tên đăng nhập:";
             // 
             // txt_Role
             // 
             this.txt_Role.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Role.Location = new System.Drawing.Point(145, 230);
+            this.txt_Role.Location = new System.Drawing.Point(166, 230);
             this.txt_Role.Name = "txt_Role";
             this.txt_Role.Size = new System.Drawing.Size(305, 22);
             this.txt_Role.TabIndex = 5;
@@ -164,11 +164,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 173);
+            this.label4.Location = new System.Drawing.Point(25, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 19);
+            this.label4.Size = new System.Drawing.Size(108, 22);
             this.label4.TabIndex = 8;
             this.label4.Text = "Loại nhân viên:";
             // 
@@ -185,18 +185,18 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(18, 120);
+            this.label3.Location = new System.Drawing.Point(28, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 19);
+            this.label3.Size = new System.Drawing.Size(105, 22);
             this.label3.TabIndex = 7;
             this.label3.Text = "Tên nhân viên:";
             // 
             // txt_LoaiNV
             // 
             this.txt_LoaiNV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_LoaiNV.Location = new System.Drawing.Point(145, 173);
+            this.txt_LoaiNV.Location = new System.Drawing.Point(166, 173);
             this.txt_LoaiNV.Name = "txt_LoaiNV";
             this.txt_LoaiNV.Size = new System.Drawing.Size(305, 22);
             this.txt_LoaiNV.TabIndex = 4;
@@ -204,7 +204,7 @@
             // txt_Username
             // 
             this.txt_Username.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Username.Location = new System.Drawing.Point(146, 65);
+            this.txt_Username.Location = new System.Drawing.Point(167, 65);
             this.txt_Username.Name = "txt_Username";
             this.txt_Username.Size = new System.Drawing.Size(304, 22);
             this.txt_Username.TabIndex = 1;
@@ -212,7 +212,7 @@
             // txt_TenNV
             // 
             this.txt_TenNV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_TenNV.Location = new System.Drawing.Point(146, 120);
+            this.txt_TenNV.Location = new System.Drawing.Point(167, 120);
             this.txt_TenNV.Name = "txt_TenNV";
             this.txt_TenNV.Size = new System.Drawing.Size(304, 22);
             this.txt_TenNV.TabIndex = 2;
@@ -273,7 +273,7 @@
             // btn_XacNhan
             // 
             this.btn_XacNhan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_XacNhan.Location = new System.Drawing.Point(1009, 168);
+            this.btn_XacNhan.Location = new System.Drawing.Point(746, 193);
             this.btn_XacNhan.Name = "btn_XacNhan";
             this.btn_XacNhan.Size = new System.Drawing.Size(145, 39);
             this.btn_XacNhan.TabIndex = 31;
@@ -284,18 +284,18 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(602, 138);
+            this.label12.Location = new System.Drawing.Point(599, 138);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(134, 19);
+            this.label12.Size = new System.Drawing.Size(133, 22);
             this.label12.TabIndex = 12;
             this.label12.Text = "Nhập lại mật khẩu:";
             // 
             // txt_NhapLaiMK
             // 
             this.txt_NhapLaiMK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_NhapLaiMK.Location = new System.Drawing.Point(758, 135);
+            this.txt_NhapLaiMK.Location = new System.Drawing.Point(772, 138);
             this.txt_NhapLaiMK.Name = "txt_NhapLaiMK";
             this.txt_NhapLaiMK.Size = new System.Drawing.Size(247, 22);
             this.txt_NhapLaiMK.TabIndex = 11;
@@ -303,18 +303,18 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(633, 84);
+            this.label11.Location = new System.Drawing.Point(628, 84);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(107, 19);
+            this.label11.Size = new System.Drawing.Size(104, 22);
             this.label11.TabIndex = 10;
             this.label11.Text = "Mật khẩu mới:";
             // 
             // txt_MKMoi
             // 
             this.txt_MKMoi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_MKMoi.Location = new System.Drawing.Point(758, 81);
+            this.txt_MKMoi.Location = new System.Drawing.Point(772, 84);
             this.txt_MKMoi.Name = "txt_MKMoi";
             this.txt_MKMoi.Size = new System.Drawing.Size(247, 22);
             this.txt_MKMoi.TabIndex = 9;
@@ -322,18 +322,18 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(606, 31);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(130, 19);
+            this.label9.Size = new System.Drawing.Size(126, 22);
             this.label9.TabIndex = 8;
             this.label9.Text = "Mật khẩu hiện tại:";
             // 
             // txt_MKHienTai
             // 
             this.txt_MKHienTai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_MKHienTai.Location = new System.Drawing.Point(758, 31);
+            this.txt_MKHienTai.Location = new System.Drawing.Point(772, 34);
             this.txt_MKHienTai.Name = "txt_MKHienTai";
             this.txt_MKHienTai.Size = new System.Drawing.Size(247, 22);
             this.txt_MKHienTai.TabIndex = 7;

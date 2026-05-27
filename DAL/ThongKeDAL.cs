@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,12 +56,14 @@ namespace doan1_Cuahangbanggiay.DAL
             return tong;
         }
 
-        public DataTable DoanhThuTheoNgay()
+        public DataTable DoanhThuTheoNgay(string boLoc)
         {
-            SqlDataAdapter da = new SqlDataAdapter("sp_DoanhThuTheoNgay", conn);
+            SqlCommand cmd = new SqlCommand("sp_DoanhThuTheoNgay",conn);
 
-            da.SelectCommand.CommandType =
-                CommandType.StoredProcedure;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@BoLoc",boLoc);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
 
             DataTable dt = new DataTable();
 
@@ -69,11 +72,15 @@ namespace doan1_Cuahangbanggiay.DAL
             return dt;
         }
 
-        public DataTable TopSanPham()
+        public DataTable TopSanPham(string kieuThongKe, string boLoc)
         {
-            SqlDataAdapter da = new SqlDataAdapter("sp_TopSanPham", conn);
+            SqlCommand cmd = new SqlCommand("sp_TopSanPham", conn);
 
-            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@KieuThongKe", kieuThongKe);
+            cmd.Parameters.AddWithValue("@BoLoc",boLoc);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
 
             DataTable dt = new DataTable();
 

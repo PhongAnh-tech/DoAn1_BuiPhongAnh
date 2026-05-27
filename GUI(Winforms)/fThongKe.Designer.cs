@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_TitleSP = new System.Windows.Forms.Label();
@@ -45,11 +45,14 @@
             this.lbl_TitleDT = new System.Windows.Forms.Label();
             this.lblDoanhThu = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.cmb_DoanhThu = new System.Windows.Forms.ComboBox();
             this.chart_DoanhThu = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.chart_Top10 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label6 = new System.Windows.Forms.Label();
+            this.cmb_KieuThongKe = new System.Windows.Forms.ComboBox();
+            this.cmb_ThoiGian = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -161,6 +164,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.cmb_DoanhThu);
             this.panel4.Controls.Add(this.chart_DoanhThu);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(6, 188);
@@ -168,18 +172,27 @@
             this.panel4.Size = new System.Drawing.Size(556, 492);
             this.panel4.TabIndex = 27;
             // 
+            // cmb_DoanhThu
+            // 
+            this.cmb_DoanhThu.FormattingEnabled = true;
+            this.cmb_DoanhThu.Location = new System.Drawing.Point(401, 3);
+            this.cmb_DoanhThu.Name = "cmb_DoanhThu";
+            this.cmb_DoanhThu.Size = new System.Drawing.Size(121, 24);
+            this.cmb_DoanhThu.TabIndex = 3;
+            this.cmb_DoanhThu.SelectedIndexChanged += new System.EventHandler(this.cmb_DoanhThu_SelectedIndexChanged);
+            // 
             // chart_DoanhThu
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chart_DoanhThu.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart_DoanhThu.Legends.Add(legend5);
+            chartArea7.Name = "ChartArea1";
+            this.chart_DoanhThu.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chart_DoanhThu.Legends.Add(legend7);
             this.chart_DoanhThu.Location = new System.Drawing.Point(19, 64);
             this.chart_DoanhThu.Name = "chart_DoanhThu";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart_DoanhThu.Series.Add(series5);
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.chart_DoanhThu.Series.Add(series7);
             this.chart_DoanhThu.Size = new System.Drawing.Size(521, 383);
             this.chart_DoanhThu.TabIndex = 2;
             this.chart_DoanhThu.Text = "chart1";
@@ -197,6 +210,8 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.cmb_ThoiGian);
+            this.panel5.Controls.Add(this.cmb_KieuThongKe);
             this.panel5.Controls.Add(this.chart_Top10);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Location = new System.Drawing.Point(568, 188);
@@ -206,17 +221,17 @@
             // 
             // chart_Top10
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart_Top10.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart_Top10.Legends.Add(legend6);
+            chartArea8.Name = "ChartArea1";
+            this.chart_Top10.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.chart_Top10.Legends.Add(legend8);
             this.chart_Top10.Location = new System.Drawing.Point(52, 64);
             this.chart_Top10.Name = "chart_Top10";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chart_Top10.Series.Add(series6);
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            this.chart_Top10.Series.Add(series8);
             this.chart_Top10.Size = new System.Drawing.Size(535, 363);
             this.chart_Top10.TabIndex = 3;
             this.chart_Top10.Text = "chart2";
@@ -231,6 +246,24 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "TOP 5 SẢN PHẨM BÁN CHẠY";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // cmb_KieuThongKe
+            // 
+            this.cmb_KieuThongKe.FormattingEnabled = true;
+            this.cmb_KieuThongKe.Location = new System.Drawing.Point(350, 3);
+            this.cmb_KieuThongKe.Name = "cmb_KieuThongKe";
+            this.cmb_KieuThongKe.Size = new System.Drawing.Size(121, 24);
+            this.cmb_KieuThongKe.TabIndex = 4;
+            this.cmb_KieuThongKe.SelectedIndexChanged += new System.EventHandler(this.cmb_KieuThongKe_SelectedIndexChanged);
+            // 
+            // cmb_ThoiGian
+            // 
+            this.cmb_ThoiGian.FormattingEnabled = true;
+            this.cmb_ThoiGian.Location = new System.Drawing.Point(488, 3);
+            this.cmb_ThoiGian.Name = "cmb_ThoiGian";
+            this.cmb_ThoiGian.Size = new System.Drawing.Size(121, 24);
+            this.cmb_ThoiGian.TabIndex = 5;
+            this.cmb_ThoiGian.SelectedIndexChanged += new System.EventHandler(this.cmb_ThoiGian_SelectedIndexChanged);
             // 
             // fThongKe
             // 
@@ -281,5 +314,8 @@
         private System.Windows.Forms.Label lbl_TitleSP;
         private System.Windows.Forms.Label lbl_TitleKH;
         private System.Windows.Forms.Label lbl_TitleDT;
+        private System.Windows.Forms.ComboBox cmb_DoanhThu;
+        private System.Windows.Forms.ComboBox cmb_ThoiGian;
+        private System.Windows.Forms.ComboBox cmb_KieuThongKe;
     }
 }

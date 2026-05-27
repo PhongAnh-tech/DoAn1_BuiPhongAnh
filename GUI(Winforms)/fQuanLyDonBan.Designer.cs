@@ -32,8 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.txt_TenKH = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_SDTKH = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_LamMoi = new System.Windows.Forms.Button();
             this.dgv_DonBan = new System.Windows.Forms.DataGridView();
@@ -66,8 +64,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(59)))), ((int)(((byte)(78)))));
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.txt_TenKH);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.txt_SDTKH);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, 1);
             this.panel1.Name = "panel1";
@@ -77,40 +73,21 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(98, 126);
+            this.label9.Location = new System.Drawing.Point(10, 108);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 19);
+            this.label9.Size = new System.Drawing.Size(117, 22);
             this.label9.TabIndex = 36;
             this.label9.Text = "Tên khách hàng:";
             // 
             // txt_TenKH
             // 
             this.txt_TenKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_TenKH.Location = new System.Drawing.Point(247, 126);
+            this.txt_TenKH.Location = new System.Drawing.Point(133, 108);
             this.txt_TenKH.Name = "txt_TenKH";
-            this.txt_TenKH.Size = new System.Drawing.Size(230, 22);
+            this.txt_TenKH.Size = new System.Drawing.Size(471, 22);
             this.txt_TenKH.TabIndex = 35;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(111, 72);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(104, 19);
-            this.label8.TabIndex = 34;
-            this.label8.Text = "Số điện thoại:";
-            // 
-            // txt_SDTKH
-            // 
-            this.txt_SDTKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_SDTKH.Location = new System.Drawing.Point(247, 72);
-            this.txt_SDTKH.Name = "txt_SDTKH";
-            this.txt_SDTKH.Size = new System.Drawing.Size(230, 22);
-            this.txt_SDTKH.TabIndex = 33;
             // 
             // label1
             // 
@@ -311,11 +288,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(54, 326);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 22);
+            this.label5.Size = new System.Drawing.Size(116, 24);
             this.label5.TabIndex = 34;
             this.label5.Text = "Tổng hóa đơn:";
             // 
@@ -394,8 +371,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_TenKH;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txt_SDTKH;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cmb_NhaCC;

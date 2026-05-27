@@ -48,9 +48,9 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkColor = System.Drawing.Color.Blue;
-            this.linkLabel1.Location = new System.Drawing.Point(557, 285);
+            this.linkLabel1.Location = new System.Drawing.Point(557, 303);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(96, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(105, 17);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Quên mật khẩu";
@@ -64,7 +64,7 @@
             this.btn_AnForm.Location = new System.Drawing.Point(579, -6);
             this.btn_AnForm.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AnForm.Name = "btn_AnForm";
-            this.btn_AnForm.Size = new System.Drawing.Size(47, 33);
+            this.btn_AnForm.Size = new System.Drawing.Size(47, 35);
             this.btn_AnForm.TabIndex = 8;
             this.btn_AnForm.Text = "-";
             this.btn_AnForm.UseVisualStyleBackColor = false;
@@ -79,7 +79,7 @@
             this.btn_TatForm.Location = new System.Drawing.Point(626, -6);
             this.btn_TatForm.Margin = new System.Windows.Forms.Padding(4);
             this.btn_TatForm.Name = "btn_TatForm";
-            this.btn_TatForm.Size = new System.Drawing.Size(45, 33);
+            this.btn_TatForm.Size = new System.Drawing.Size(45, 35);
             this.btn_TatForm.TabIndex = 9;
             this.btn_TatForm.Tag = "";
             this.btn_TatForm.Text = "X";
@@ -89,9 +89,9 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(263, 9);
+            this.label1.Location = new System.Drawing.Point(263, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 47);
+            this.label1.Size = new System.Drawing.Size(309, 50);
             this.label1.TabIndex = 12;
             this.label1.Text = "ĐĂNG NHẬP";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -101,7 +101,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, -6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(233, 319);
+            this.pictureBox1.Size = new System.Drawing.Size(233, 339);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -111,9 +111,9 @@
             this.btn_Login.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Login.Image = ((System.Drawing.Image)(resources.GetObject("btn_Login.Image")));
             this.btn_Login.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Login.Location = new System.Drawing.Point(269, 235);
+            this.btn_Login.Location = new System.Drawing.Point(269, 250);
             this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(108, 37);
+            this.btn_Login.Size = new System.Drawing.Size(108, 39);
             this.btn_Login.TabIndex = 13;
             this.btn_Login.Text = "Login";
             this.btn_Login.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -125,9 +125,9 @@
             this.btn_Exit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_Exit.Image")));
             this.btn_Exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Exit.Location = new System.Drawing.Point(505, 235);
+            this.btn_Exit.Location = new System.Drawing.Point(505, 250);
             this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(108, 37);
+            this.btn_Exit.Size = new System.Drawing.Size(108, 39);
             this.btn_Exit.TabIndex = 14;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -138,7 +138,7 @@
             // 
             this.txt_User.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_User.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_User.Location = new System.Drawing.Point(266, 95);
+            this.txt_User.Location = new System.Drawing.Point(266, 101);
             this.txt_User.Name = "txt_User";
             this.txt_User.Size = new System.Drawing.Size(347, 27);
             this.txt_User.TabIndex = 15;
@@ -147,7 +147,7 @@
             // 
             this.txt_Pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Pass.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Pass.Location = new System.Drawing.Point(266, 156);
+            this.txt_Pass.Location = new System.Drawing.Point(266, 166);
             this.txt_Pass.Name = "txt_Pass";
             this.txt_Pass.Size = new System.Drawing.Size(347, 27);
             this.txt_Pass.TabIndex = 16;
@@ -156,7 +156,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(263, 73);
+            this.label2.Location = new System.Drawing.Point(263, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 19);
             this.label2.TabIndex = 17;
@@ -166,7 +166,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(263, 137);
+            this.label3.Location = new System.Drawing.Point(263, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 19);
             this.label3.TabIndex = 18;
@@ -176,7 +176,7 @@
             // 
             this.check_ShowPass.AutoSize = true;
             this.check_ShowPass.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check_ShowPass.Location = new System.Drawing.Point(315, 196);
+            this.check_ShowPass.Location = new System.Drawing.Point(315, 208);
             this.check_ShowPass.Name = "check_ShowPass";
             this.check_ShowPass.Size = new System.Drawing.Size(150, 23);
             this.check_ShowPass.TabIndex = 19;
@@ -186,10 +186,10 @@
             // 
             // fLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(674, 310);
+            this.ClientSize = new System.Drawing.Size(674, 329);
             this.ControlBox = false;
             this.Controls.Add(this.check_ShowPass);
             this.Controls.Add(this.label3);
@@ -203,6 +203,7 @@
             this.Controls.Add(this.btn_AnForm);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBox1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fLogin";

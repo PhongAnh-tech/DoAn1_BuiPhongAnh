@@ -22,6 +22,30 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
             InitializeComponent();
         }
 
+
+        void LoadComboBox()
+        {
+            cmb_DoanhThu.Items.Add("Hôm nay");
+            cmb_DoanhThu.Items.Add("Hôm qua");
+            cmb_DoanhThu.Items.Add("7 ngày qua");
+            cmb_DoanhThu.Items.Add("Tháng này");
+            cmb_DoanhThu.Items.Add("Tháng trước");
+
+         
+            cmb_KieuThongKe.Items.Add("Theo số lượng");
+            cmb_KieuThongKe.Items.Add("Theo doanh thu");
+
+            cmb_ThoiGian.Items.Add("Hôm nay");
+            cmb_ThoiGian.Items.Add("Hôm qua");
+            cmb_ThoiGian.Items.Add("7 ngày qua");
+            cmb_ThoiGian.Items.Add("Tháng này");
+            cmb_ThoiGian.Items.Add("Tháng trước");
+
+            cmb_DoanhThu.SelectedIndex = 0;
+            cmb_KieuThongKe.SelectedIndex = 0;
+            cmb_ThoiGian.SelectedIndex = 0;
+        }
+
         void LoadThongKe()
         {
             lbl_TitleSP.Text = "SẢN PHẨM ĐÃ BÁN";
@@ -33,9 +57,9 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
             lblKhachHang.Text = bus.TongKhachHang().ToString();
         }
 
-        void LoadChartDoanhThu()
+        void LoadChartDoanhThu(string boLoc)
         {
-            DataTable dt = bus.DoanhThuTheoNgay();
+            DataTable dt = bus.DoanhThuTheoNgay(boLoc);
 
             chart_DoanhThu.Series.Clear();
 
@@ -47,9 +71,9 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
             }
         }
 
-        void LoadChartTopSP()
+        void LoadChartTopSP(string kieuThongKe, string boLoc)
         {
-            DataTable dt = bus.TopSanPham();
+            DataTable dt = bus.TopSanPham(kieuThongKe, boLoc);
 
             chart_Top10.Series.Clear();
 
@@ -59,19 +83,33 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
 
             foreach (DataRow row in dt.Rows)
             {
-                series.Points.AddXY(row["TENSP"], row["TongBan"]);
+                series.Points.AddXY(
+                    row["TENSP"],
+                    row["GiaTri"]);
             }
         }
 
         private void fThongKe_Load(object sender, EventArgs e)
         {
             LoadThongKe();
-            LoadChartDoanhThu();
-            LoadChartTopSP();
+            LoadComboBox();
+            LoadChartDoanhThu(cmb_DoanhThu.Text);
+            LoadChartTopSP(cmb_KieuThongKe.Text, cmb_ThoiGian.Text);
         }
 
-        
+        private void cmb_DoanhThu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadChartDoanhThu(cmb_DoanhThu.Text);
+        }
 
-        
+        private void cmb_KieuThongKe_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadChartTopSP(cmb_KieuThongKe.Text, cmb_ThoiGian.Text);
+        }
+
+        private void cmb_ThoiGian_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadChartTopSP(cmb_KieuThongKe.Text, cmb_ThoiGian.Text);
+        }
     }
 }

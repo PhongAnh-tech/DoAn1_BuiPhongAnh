@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,14 +28,14 @@ namespace doan1_Cuahangbanggiay.BUS
             return dal.TongKhachHang();
         }
 
-        public DataTable DoanhThuTheoNgay()
+        public DataTable DoanhThuTheoNgay(string boLoc)
         {
-            return dal.DoanhThuTheoNgay();
+            return dal.DoanhThuTheoNgay(boLoc);
         }
 
-        public DataTable TopSanPham()
+        public DataTable TopSanPham(string kieuThongKe, string boLoc)
         {
-            return dal.TopSanPham();
+            return dal.TopSanPham(kieuThongKe, boLoc);
         }
     }
 }
