@@ -17,7 +17,7 @@ namespace doan1_Cuahangbanggiay
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fQuanLyDonNhap());
+            Application.Run(new fLogin());
         }
     }
 }
