@@ -93,6 +93,21 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
             LoadTaiKhoan();
         }
 
-        
+        private void btn_QuayLai_Click(object sender, EventArgs e)
+        {
+            DialogResult rs = MessageBox.Show("Bạn có muốn quay lại Login ?",
+                                      "Xác nhận",
+                                      MessageBoxButtons.YesNo);
+
+            if (rs == DialogResult.Yes)
+            {
+                this.Hide();
+
+                fLogin f = new fLogin();
+                f.ShowDialog();
+
+                this.Close();
+            }
+        }
     }
 }

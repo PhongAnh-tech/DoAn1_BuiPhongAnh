@@ -47,6 +47,7 @@
             this.dgv_TKNhanVien = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_QuayLai = new System.Windows.Forms.Button();
             this.btn_XacNhan = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.txt_NhapLaiMK = new System.Windows.Forms.TextBox();
@@ -258,6 +259,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(59)))), ((int)(((byte)(78)))));
+            this.panel2.Controls.Add(this.btn_QuayLai);
             this.panel2.Controls.Add(this.btn_XacNhan);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.txt_NhapLaiMK);
@@ -269,6 +271,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1190, 264);
             this.panel2.TabIndex = 32;
+            // 
+            // btn_QuayLai
+            // 
+            this.btn_QuayLai.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_QuayLai.Location = new System.Drawing.Point(944, 193);
+            this.btn_QuayLai.Name = "btn_QuayLai";
+            this.btn_QuayLai.Size = new System.Drawing.Size(145, 39);
+            this.btn_QuayLai.TabIndex = 32;
+            this.btn_QuayLai.Text = "Quay Lại";
+            this.btn_QuayLai.UseVisualStyleBackColor = true;
+            this.btn_QuayLai.Click += new System.EventHandler(this.btn_QuayLai_Click);
             // 
             // btn_XacNhan
             // 
@@ -390,5 +403,6 @@
         private System.Windows.Forms.TextBox txt_MKMoi;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_MKHienTai;
+        private System.Windows.Forms.Button btn_QuayLai;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using doan1_Cuahangbanggiay.BUS;
+using doan1_Cuahangbanggiay.GUI_Winforms_;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -102,7 +103,11 @@ namespace doan1_Cuahangbanggiay
             this.Hide();
         }
 
-        
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            fThietLap f = new fThietLap();
+
+        }
     }
 }
 
