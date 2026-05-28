@@ -72,25 +72,13 @@ namespace doan1_Cuahangbanggiay.DAL
 
             try
             {
-                SqlCommand cmdDonBan =
-                    new SqlCommand(
-                    "sp_ThemDonBan",
-                    conn,
-                    tran);
+                SqlCommand cmdDonBan = new SqlCommand("sp_ThemDonBan", conn, tran);
 
-                cmdDonBan.CommandType =
-                    CommandType.StoredProcedure;
+                cmdDonBan.CommandType = CommandType.StoredProcedure;
+                cmdDonBan.Parameters.AddWithValue("@MANV", db.MANV);
+                cmdDonBan.Parameters.AddWithValue("@MAKH", db.MAKH);
 
-                cmdDonBan.Parameters.AddWithValue(
-                    "@MANV",
-                    db.MANV);
-
-                cmdDonBan.Parameters.AddWithValue(
-                    "@MAKH",
-                    db.MAKH);
-
-                object result =
-                    cmdDonBan.ExecuteScalar();
+                object result = cmdDonBan.ExecuteScalar();
 
                 madb = result.ToString();
 
@@ -99,78 +87,34 @@ namespace doan1_Cuahangbanggiay.DAL
                     if (row.IsNewRow)
                         continue;
 
-                    string masp =
-                        row.Cells["MASP"].Value.ToString();
+                    string masp = row.Cells["MASP"].Value.ToString();
 
-                    int sl =
-                        Convert.ToInt32(
-                            row.Cells["SL"].Value);
+                    int sl = Convert.ToInt32(row.Cells["SL"].Value);
 
-                    decimal gia =
-                        Convert.ToDecimal(
-                            row.Cells["GIA"].Value);
+                    decimal gia = Convert.ToDecimal(row.Cells["GIA"].Value);
 
 
-                    SqlCommand cmdCT =
-                        new SqlCommand(
-                        "sp_ThemCTDonBan",
-                        conn,
-                        tran);
+                    SqlCommand cmdCT =new SqlCommand("sp_ThemCTDonBan", conn, tran);
 
-                    cmdCT.CommandType =
-                        CommandType.StoredProcedure;
-
-                    cmdCT.Parameters.AddWithValue(
-                        "@MADB",
-                        madb);
-
-                    cmdCT.Parameters.AddWithValue(
-                        "@MASP",
-                        masp);
-
-                    cmdCT.Parameters.AddWithValue(
-                        "@SL",
-                        sl);
-
-                    cmdCT.Parameters.AddWithValue(
-                        "@GIA",
-                        gia);
-
+                    cmdCT.CommandType = CommandType.StoredProcedure;
+                    cmdCT.Parameters.AddWithValue("@MADB", madb);
+                    cmdCT.Parameters.AddWithValue("@MASP", masp);
+                    cmdCT.Parameters.AddWithValue("@SL", sl);
+                    cmdCT.Parameters.AddWithValue("@GIA", gia);
                     cmdCT.ExecuteNonQuery();
 
-                    SqlCommand cmdTru =
-                        new SqlCommand(
-                        "sp_TruSoLuongSanPham",
-                        conn,
-                        tran);
+                    SqlCommand cmdTru = new SqlCommand("sp_TruSoLuongSanPham", conn, tran);
 
-                    cmdTru.CommandType =
-                        CommandType.StoredProcedure;
-
-                    cmdTru.Parameters.AddWithValue(
-                        "@MASP",
-                        masp);
-
-                    cmdTru.Parameters.AddWithValue(
-                        "@SL",
-                        sl);
-
+                    cmdTru.CommandType = CommandType.StoredProcedure;
+                    cmdTru.Parameters.AddWithValue("@MASP", masp);
+                    cmdTru.Parameters.AddWithValue("@SL", sl);
                     cmdTru.ExecuteNonQuery();
                 }
 
-                SqlCommand cmdTongTien =
-                    new SqlCommand(
-                    "sp_CapNhatTongTienDonBan",
-                    conn,
-                    tran);
+                SqlCommand cmdTongTien = new SqlCommand("sp_CapNhatTongTienDonBan", conn, tran);
 
-                cmdTongTien.CommandType =
-                    CommandType.StoredProcedure;
-
-                cmdTongTien.Parameters.AddWithValue(
-                    "@MADB",
-                    madb);
-
+                cmdTongTien.CommandType = CommandType.StoredProcedure;
+                cmdTongTien.Parameters.AddWithValue("@MADB", madb);
                 cmdTongTien.ExecuteNonQuery();
 
                 tran.Commit();

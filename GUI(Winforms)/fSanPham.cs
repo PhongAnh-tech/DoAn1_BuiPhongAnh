@@ -66,18 +66,13 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
             DataTable dt = bus.GetLoai();
 
             cmb_Loai.DataSource = dt;
-
-            cmb_Loai.DisplayMember =
-                "MALOAISP";
-
-            cmb_Loai.ValueMember =
-                "MALOAISP";
+            cmb_Loai.DisplayMember = "MALOAISP";
+            cmb_Loai.ValueMember = "MALOAISP";
         }
 
         private void btn_ThemGiay_Click(object sender, EventArgs e)
         {
-            SanPhamDTO sp =
-                new SanPhamDTO();
+            SanPhamDTO sp = new SanPhamDTO();
 
             sp.MASP = txt_MaGiay.Text;
             sp.TENSP = txt_TenGiay.Text;
@@ -89,24 +84,20 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
 
             decimal km = 0;
 
-            decimal.TryParse(
-                txt_KhuyenMai.Text,
-                out km);
+            decimal.TryParse(txt_KhuyenMai.Text, out km);
 
             sp.KHUYENMAI = km;
 
             bus.InsertSanPham(sp);
 
-            MessageBox.Show(
-                "Thêm thành công");
+            MessageBox.Show("Thêm thành công");
 
             LoadSanPham();
         }
 
         private void btn_SuaGiay_Click(object sender, EventArgs e)
         {
-            SanPhamDTO sp =
-                new SanPhamDTO();
+            SanPhamDTO sp = new SanPhamDTO();
 
             sp.MASP = txt_MaGiay.Text;
             sp.TENSP = txt_TenGiay.Text;
@@ -118,16 +109,13 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
 
             decimal km = 0;
 
-            decimal.TryParse(
-                txt_KhuyenMai.Text,
-                out km);
+            decimal.TryParse(txt_KhuyenMai.Text, out km);
 
             sp.KHUYENMAI = km;
 
             bus.UpdateSanPham(sp);
 
-            MessageBox.Show(
-                "Sửa thành công");
+            MessageBox.Show("Sửa thành công");
 
             LoadSanPham();
         }

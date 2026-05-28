@@ -341,6 +341,7 @@
             // 
             // dgv_ChuaNhapKho
             // 
+            this.dgv_ChuaNhapKho.AllowUserToAddRows = false;
             this.dgv_ChuaNhapKho.BackgroundColor = System.Drawing.Color.White;
             this.dgv_ChuaNhapKho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_ChuaNhapKho.Location = new System.Drawing.Point(3, 0);

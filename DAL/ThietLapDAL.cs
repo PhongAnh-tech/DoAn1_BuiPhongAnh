@@ -13,14 +13,11 @@ namespace doan1_Cuahangbanggiay.DAL
     {
         public DataTable GetTaiKhoan()
         {
-            SqlDataAdapter da =
-                new SqlDataAdapter("sp_GetTaiKhoan", conn);
+            SqlDataAdapter da = new SqlDataAdapter("sp_GetTaiKhoan", conn);
 
-            da.SelectCommand.CommandType =
-                CommandType.StoredProcedure;
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
 
             DataTable dt = new DataTable();
-
             da.Fill(dt);
 
             return dt;
@@ -56,24 +53,20 @@ namespace doan1_Cuahangbanggiay.DAL
             cmd.Parameters.AddWithValue("@user", user);
             cmd.Parameters.AddWithValue("@pass", pass);
 
-            int count =
-                (int)cmd.ExecuteScalar();
+            int count = (int)cmd.ExecuteScalar();
 
             conn.Close();
 
             return count > 0;
         }
 
-        public void ChangePassword(
-            string user,
-            string newPass)
+        public void ChangePassword(string user, string newPass)
         {
             conn.Open();
 
             SqlCommand cmd = new SqlCommand("sp_ChangePassword", conn);
 
             cmd.CommandType = CommandType.StoredProcedure;
-
             cmd.Parameters.AddWithValue("@user", user);
             cmd.Parameters.AddWithValue("@newPass", newPass);
 

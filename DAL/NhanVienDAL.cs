@@ -13,14 +13,10 @@ namespace doan1_Cuahangbanggiay.DAL
     {
         public DataTable GetNhanVien()
         {
-            SqlDataAdapter da =
-                new SqlDataAdapter("sp_GetNhanVien", conn);
+            SqlDataAdapter da = new SqlDataAdapter("sp_GetNhanVien", conn);
 
-            da.SelectCommand.CommandType =
-                CommandType.StoredProcedure;
-
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
             DataTable dt = new DataTable();
-
             da.Fill(dt);
 
             return dt;
@@ -30,12 +26,9 @@ namespace doan1_Cuahangbanggiay.DAL
         {
             conn.Open();
 
-            SqlCommand cmd = new SqlCommand(
-                "SELECT COUNT(*) FROM NHANVIEN WHERE MANV=@manv",
-                conn);
+            SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM NHANVIEN WHERE MANV=@manv", conn);
 
             cmd.Parameters.AddWithValue("@manv", manv);
-
             int count = (int)cmd.ExecuteScalar();
 
             conn.Close();
@@ -47,8 +40,7 @@ namespace doan1_Cuahangbanggiay.DAL
         {
             conn.Open();
 
-            SqlCommand cmd =
-                new SqlCommand("sp_InsertNhanVien", conn);
+            SqlCommand cmd = new SqlCommand("sp_InsertNhanVien", conn);
 
             cmd.CommandType = CommandType.StoredProcedure;
 

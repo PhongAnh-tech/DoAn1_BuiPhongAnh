@@ -14,15 +14,10 @@ namespace doan1_Cuahangbanggiay.DAL
         // LOAD
         public DataTable GetLoaiGiay()
         {
-            SqlDataAdapter da =
-                new SqlDataAdapter(
-                    "sp_GetLoaiGiay", conn);
+            SqlDataAdapter da = new SqlDataAdapter("sp_GetLoaiGiay", conn);
 
-            da.SelectCommand.CommandType =
-                CommandType.StoredProcedure;
-
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
             DataTable dt = new DataTable();
-
             da.Fill(dt);
 
             return dt;
@@ -46,13 +41,11 @@ namespace doan1_Cuahangbanggiay.DAL
         }
 
         // THÊM
-        public void InsertLoaiGiay(
-            LoaiGiayDTO lg)
+        public void InsertLoaiGiay(LoaiGiayDTO lg)
         {
             conn.Open();
 
-            SqlCommand cmd =
-                new SqlCommand("sp_InsertLoaiGiay", conn);
+            SqlCommand cmd = new SqlCommand("sp_InsertLoaiGiay", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ma", lg.MALOAISP);
             cmd.Parameters.AddWithValue("@ten", lg.TENLOAI);
@@ -62,13 +55,11 @@ namespace doan1_Cuahangbanggiay.DAL
         }
 
         // SỬA
-        public void UpdateLoaiGiay(
-            LoaiGiayDTO lg)
+        public void UpdateLoaiGiay(LoaiGiayDTO lg)
         {
             conn.Open();
 
-            SqlCommand cmd =
-                new SqlCommand("sp_UpdateLoaiGiay", conn);
+            SqlCommand cmd = new SqlCommand("sp_UpdateLoaiGiay", conn);
 
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ma", lg.MALOAISP);
@@ -78,13 +69,11 @@ namespace doan1_Cuahangbanggiay.DAL
         }
 
         // XÓA
-        public void DeleteLoaiGiay(
-            string ma)
+        public void DeleteLoaiGiay(string ma)
         {
             conn.Open();
 
-            SqlCommand cmd =
-                new SqlCommand("sp_DeleteLoaiGiay", conn);
+            SqlCommand cmd = new SqlCommand("sp_DeleteLoaiGiay", conn);
 
             cmd.CommandType =CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ma", ma);

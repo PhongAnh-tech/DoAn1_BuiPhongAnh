@@ -13,15 +13,11 @@ namespace doan1_Cuahangbanggiay.DAL
     {
         public DataTable GetKhachHang()
         {
-            SqlDataAdapter da =
-                new SqlDataAdapter(
-                    "sp_GetKhachHang", conn);
+            SqlDataAdapter da = new SqlDataAdapter("sp_GetKhachHang", conn);
 
-            da.SelectCommand.CommandType =
-                CommandType.StoredProcedure;
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
 
             DataTable dt = new DataTable();
-
             da.Fill(dt);
 
             return dt;
@@ -48,8 +44,7 @@ namespace doan1_Cuahangbanggiay.DAL
 
             SqlCommand cmd = new SqlCommand("sp_InsertKhachHang", conn);
 
-            cmd.CommandType =
-                CommandType.StoredProcedure;
+            cmd.CommandType = CommandType.StoredProcedure;
 
             cmd.Parameters.AddWithValue("@makh", kh.MAKH);
             cmd.Parameters.AddWithValue("@tenkh", kh.TENKH);
@@ -70,8 +65,7 @@ namespace doan1_Cuahangbanggiay.DAL
 
             SqlCommand cmd = new SqlCommand("sp_UpdateKhachHang", conn);
 
-            cmd.CommandType =
-                CommandType.StoredProcedure;
+            cmd.CommandType = CommandType.StoredProcedure;
 
             cmd.Parameters.AddWithValue("@makh", kh.MAKH);
             cmd.Parameters.AddWithValue("@tenkh", kh.TENKH);
@@ -90,15 +84,10 @@ namespace doan1_Cuahangbanggiay.DAL
         {
             conn.Open();
 
-            SqlCommand cmd =
-                new SqlCommand(
-                    "sp_DeleteKhachHang", conn);
+            SqlCommand cmd = new SqlCommand("sp_DeleteKhachHang", conn);
 
-            cmd.CommandType =
-                CommandType.StoredProcedure;
-
+            cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@makh", ma);
-
             cmd.ExecuteNonQuery();
 
             conn.Close();
@@ -108,11 +97,8 @@ namespace doan1_Cuahangbanggiay.DAL
         {
             SqlDataAdapter da = new SqlDataAdapter("sp_SearchKhachHang", conn);
 
-            da.SelectCommand.CommandType =
-                CommandType.StoredProcedure;
-
-            da.SelectCommand.Parameters.AddWithValue(
-                "@tenkh", ten);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.AddWithValue("@tenkh", ten);
 
             DataTable dt = new DataTable();
 

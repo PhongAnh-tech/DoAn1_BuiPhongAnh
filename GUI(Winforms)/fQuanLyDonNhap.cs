@@ -34,6 +34,7 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
             LoadDonNhap();
 
             TaoCotCTPN();
+            dgv_ChuaNhapKho.AllowUserToAddRows = false;
         }
 
         void LoadNhanVien()
@@ -92,24 +93,11 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
                 return;
             }
 
-            string masp =
-                dgv_DonNhap.CurrentRow
-                .Cells["MASP"].Value.ToString();
+            string masp = dgv_DonNhap.CurrentRow.Cells["MASP"].Value.ToString();
+            string tensp = dgv_DonNhap.CurrentRow.Cells["TENSP"].Value.ToString();
+            string dongia = dgv_DonNhap.CurrentRow.Cells["DONGIANHAP"].Value.ToString();
 
-            string tensp =
-                dgv_DonNhap.CurrentRow
-                .Cells["TENSP"].Value.ToString();
-
-            string dongia =
-                dgv_DonNhap.CurrentRow
-                .Cells["DONGIANHAP"].Value.ToString();
-
-            dgv_CTPN.Rows.Add(
-                masp,
-                tensp,
-                1,
-                dongia
-            );
+            dgv_CTPN.Rows.Add(masp,tensp,1,dongia);
         }
 
         private void btn_Luu_Click(object sender, EventArgs e)
@@ -124,24 +112,20 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
                 dn.NGAYNHAP = dpK_NgayNhap.Value;
                 dn.MAKM = cmb_MaKM.Text;
 
-                List<ChiTietDonNhapDTO> dsCT =
-                    new List<ChiTietDonNhapDTO>();
+                List<ChiTietDonNhapDTO> dsCT = new List<ChiTietDonNhapDTO>();
 
                 foreach (DataGridViewRow row in dgv_CTPN.Rows)
                 {
                     if (row.Cells[0].Value == null)
                         continue;
 
-                    ChiTietDonNhapDTO ct =
-                        new ChiTietDonNhapDTO();
+                    ChiTietDonNhapDTO ct = new ChiTietDonNhapDTO();
 
                     ct.MADN = txt_MaDN.Text;
                     ct.MASP = row.Cells[0].Value.ToString();
-                    ct.SLNHAP =
-                        Convert.ToInt32(row.Cells[2].Value);
+                    ct.SLNHAP = Convert.ToInt32(row.Cells[2].Value);
 
-                    ct.DONGIANHAP =
-                        Convert.ToDecimal(row.Cells[3].Value);
+                    ct.DONGIANHAP = Convert.ToDecimal(row.Cells[3].Value);
 
                     dsCT.Add(ct);
                 }
@@ -167,8 +151,7 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
             }
 
             string madn =
-                dgv_ChuaNhapKho.CurrentRow
-                .Cells["MADN"].Value.ToString();
+                dgv_ChuaNhapKho.CurrentRow.Cells["MADN"].Value.ToString();
 
             bus.XacNhanNhapKho(madn);
 
@@ -190,10 +173,9 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
         {
             if (e.RowIndex >= 0)
             {
-                txt_MaDN.Text =
-                    dgv_ChuaNhapKho.Rows[e.RowIndex]
-                    .Cells["MADN"].Value.ToString();
+                txt_MaDN.Text = dgv_ChuaNhapKho.Rows[e.RowIndex].Cells["MADN"].Value.ToString();
             }
+            
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
