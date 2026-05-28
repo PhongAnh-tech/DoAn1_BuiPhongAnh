@@ -101,8 +101,7 @@ namespace doan1_Cuahangbanggiay.DAL
         {
             conn.Open();
 
-            SqlTransaction tran =
-                conn.BeginTransaction();
+            SqlTransaction tran = conn.BeginTransaction();
 
             try
             {
