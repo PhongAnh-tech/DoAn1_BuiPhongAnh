@@ -76,11 +76,11 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblName.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(205, 54);
+            this.lblName.Location = new System.Drawing.Point(205, 43);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(79, 22);
+            this.lblName.Size = new System.Drawing.Size(88, 19);
             this.lblName.TabIndex = 20;
             this.lblName.Text = " Xin chào:";
             // 
@@ -88,11 +88,11 @@
             // 
             this.lblRole.AutoSize = true;
             this.lblRole.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblRole.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRole.ForeColor = System.Drawing.Color.White;
-            this.lblRole.Location = new System.Drawing.Point(214, 76);
+            this.lblRole.Location = new System.Drawing.Point(214, 81);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(70, 22);
+            this.lblRole.Size = new System.Drawing.Size(76, 19);
             this.lblRole.TabIndex = 21;
             this.lblRole.Text = " Quyền :";
             // 

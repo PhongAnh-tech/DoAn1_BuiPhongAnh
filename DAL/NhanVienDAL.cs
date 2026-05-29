@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace doan1_Cuahangbanggiay.DAL
 {
@@ -52,8 +53,9 @@ namespace doan1_Cuahangbanggiay.DAL
             cmd.Parameters.AddWithValue("@gioitinh", nv.GIOITINH);
             cmd.Parameters.AddWithValue("@maloai", nv.MALOAI);
 
+            MessageBox.Show("Số điện thoại không hợp lệ");
             int result = cmd.ExecuteNonQuery();
-
+            
             conn.Close();
 
             return result > 0;
