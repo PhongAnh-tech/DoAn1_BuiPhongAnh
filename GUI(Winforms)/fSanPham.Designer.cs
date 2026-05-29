@@ -228,6 +228,7 @@
             this.cmb_Loai.Name = "cmb_Loai";
             this.cmb_Loai.Size = new System.Drawing.Size(230, 24);
             this.cmb_Loai.TabIndex = 3;
+            this.cmb_Loai.SelectedIndexChanged += new System.EventHandler(this.cmb_Loai_SelectedIndexChanged);
             // 
             // txt_TenGiay
             // 

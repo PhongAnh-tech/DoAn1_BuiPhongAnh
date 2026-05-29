@@ -171,5 +171,10 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
             fLoaiGiay f = new fLoaiGiay();
             f.Show();
         }
+
+        private void cmb_Loai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -204,6 +204,8 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
                 txt_MaDN.Clear();
             }
         }
+
+        
     }
 
 }
