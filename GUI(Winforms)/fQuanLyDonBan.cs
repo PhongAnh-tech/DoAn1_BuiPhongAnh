@@ -268,12 +268,8 @@ namespace doan1_Cuahangbanggiay.GUI_Winforms_
             }
 
             rpt.Load(path);
-
-            rpt.Database.Tables[0]
-                .SetDataSource(dt);
-
+            rpt.Database.Tables[0].SetDataSource(dt);
             rpt.SetParameterValue("MADB", madb);
-
             rpt.SetParameterValue("TienKhachDua", 0);
 
             fInhoadon f = new fInhoadon();
